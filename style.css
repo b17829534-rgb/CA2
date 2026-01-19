@@ -386,8 +386,7 @@ body, html {
   padding: 9px 14px;
   background-color: rgba(245, 159, 10, 0.2);
   border-radius: 9999px;
-  display: flex;
-  text-align: center;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
@@ -444,8 +443,12 @@ body, html {
   }
 
   .services-badge {
-    top: 80px;
+    top: 80px; 
   }
+  .services-badge:hover {
+  background-color: rgba(245, 159, 10, 0.3);
+  transform: translateX(-50%) scale(1.05);
+}
 
   .services-title {
     top: 140px;
@@ -477,10 +480,8 @@ body, html {
   }
 
   .services-badge {
-  display: flex;               /* enable flexbox */
-  align-items: center;         /* vertical center */
-  justify-content: center;     /* horizontal center */
-  margin: 0 auto 16px;  
+    margin: 0 auto 16px;
+    display: inline-block;
   }
 
   .services-title {
@@ -1794,7 +1795,7 @@ img {
   padding: 9px 14px;
   background-color: rgba(245, 159, 10, 0.2);
   border-radius: 9999px;
-  display: flex;
+  display: inline-flex;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -1854,7 +1855,10 @@ img {
   .about-badge {
     top: 80px;
   }
-
+  .about-badge-text {
+    font-size: 13px;
+    line-height: 17px;
+  }
   .about-title {
     top: 140px;
     font-size: 32px;
@@ -1875,7 +1879,7 @@ img {
     padding: 80px 16px 60px;
   }
 
-  .about-badge{
+  .about-badge,
   .about-title,
   .about-subtitle {
     position: relative;
@@ -1885,12 +1889,13 @@ img {
   }
 
   .about-badge {
-    display: flex;               /* enable flexbox */
-  align-items: center;         /* vertical center */
-  justify-content: center;     /* horizontal center */
-  margin: 0 auto 16px;  
+    margin: 0 auto 16px;
+    display: inline-block;
   }
-
+  .about-badge-text {
+    font-size: 12px;
+    line-height: 16px;
+  }
   .about-title {
     font-size: 26px;
     line-height: 34px;
@@ -1904,6 +1909,10 @@ img {
   }
 }
 @media (max-width: 480px) {
+  .about-badge-text {
+    font-size: 11px;
+    line-height: 15px;
+  }
   .about-title {
     font-size: 22px;
     line-height: 30px;
@@ -1987,6 +1996,7 @@ img {
 .nav-link:hover::after {
   width: 100%;
 }
+
 @media (max-width: 768px) {
 
   .nav-links1 {
@@ -2085,7 +2095,7 @@ img {
     z-index: 1001;
 
     -webkit-tap-highlight-color: transparent;
-  }}
+  }
 
   .menu-toggle span {
     width: 26px;
@@ -3489,8 +3499,7 @@ button:focus-visible {
   padding: 9px 14px;
   background-color: rgba(245, 159, 10, 0.2);
   border-radius: 9999px;
-  display: flex;
-  text-align: center;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
@@ -3549,7 +3558,7 @@ button:focus-visible {
   .contact-badge {
     top: 80px;
   }
-
+  
   .contact-title {
     top: 140px;
     font-size: 32px;
@@ -3580,12 +3589,13 @@ button:focus-visible {
   }
 
   .contact-badge {
-    display: flex;               /* enable flexbox */
-  align-items: center;         /* vertical center */
-  justify-content: center;     /* horizontal center */
-  margin: 0 auto 16px;  
+    margin: 0 auto 16px;
+    display: inline-block;
   }
-
+  .contact-badge:hover {
+    transform: translateX(-50%) scale(1);
+    background-color: rgba(245, 159, 10, 0.2);
+  }
   .contact-title {
     font-size: 26px;
     line-height: 34px;
@@ -4553,8 +4563,4 @@ html, body {
     border-radius: 14px;
   }
 }
-
-
-
-
 
