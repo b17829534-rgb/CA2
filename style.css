@@ -399,6 +399,7 @@ body, html {
   font-weight: 500;
   color: #f59f0a;
   line-height: 18px;
+  text-align: center;
 }
 
 /* Title */
@@ -2057,6 +2058,28 @@ img {
   background: whitesmoke;
   transition: all 0.35s ease;
 }
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+
+    background: transparent;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .menu-toggle span {
+    width: 26px;
+    height: 2px;
+    background: whitesmoke;
+    transition: all 0.35s ease;
+  }
+}
 /* Remove focus outline box */
 a:focus,
 a:focus-visible,
@@ -2775,9 +2798,10 @@ button:focus-visible {
   }
 
   .timeline-content {
-    width: 100%;
+    width: calc(50% - 60px);
+    padding: 20px 22px;
     margin-top: 16px;
-    margin-left: 0 !important;
+    margin-left: 10px;
     margin-right: 0 !important;
     padding: 18px 20px;
     text-align: left !important;
@@ -3464,6 +3488,7 @@ button:focus-visible {
   font-weight: 500;
   color: #f59f0a;
   line-height: 18px;
+  text-align: center;
 }
 
 /* Title */
@@ -4508,4 +4533,5 @@ html, body {
     border-radius: 14px;
   }
 }
+
 
