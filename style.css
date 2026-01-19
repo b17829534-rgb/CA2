@@ -386,6 +386,9 @@ body, html {
   padding: 9px 14px;
   background-color: rgba(245, 159, 10, 0.2);
   border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: all 0.3s ease;
 }
 
@@ -1788,6 +1791,9 @@ img {
   padding: 9px 14px;
   background-color: rgba(245, 159, 10, 0.2);
   border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: all 0.3s ease;
 }
 
@@ -1976,9 +1982,6 @@ img {
   width: 100%;
 }
 @media (max-width: 768px) {
-  .menu-toggle {
-    display: flex;
-  }
 
   .nav-links1 {
     position: absolute;
@@ -2065,13 +2068,18 @@ img {
     gap: 6px;
     cursor: pointer;
 
-    background: transparent;
+    background: whitesmoke;
     border: none;
     padding: 8px;
     border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    right: 20px;      /* distance from right edge */
+    transform: translateY(-50%); /* vertically center in navbar */
+    z-index: 1001;
 
     -webkit-tap-highlight-color: transparent;
-  }
+  }}
 
   .menu-toggle span {
     width: 26px;
@@ -3475,6 +3483,9 @@ button:focus-visible {
   padding: 9px 14px;
   background-color: rgba(245, 159, 10, 0.2);
   border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: all 0.3s ease;
 }
 
@@ -4533,5 +4544,6 @@ html, body {
     border-radius: 14px;
   }
 }
+
 
 
