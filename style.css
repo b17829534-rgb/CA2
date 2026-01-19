@@ -477,8 +477,10 @@ body, html {
   }
 
   .services-badge {
-    margin: 0 auto 16px;
-    display: inline-block;
+  display: flex;               /* enable flexbox */
+  align-items: center;         /* vertical center */
+  justify-content: center;     /* horizontal center */
+  margin: 0 auto 16px;  
   }
 
   .services-title {
@@ -1873,7 +1875,7 @@ img {
     padding: 80px 16px 60px;
   }
 
-  .about-badge,
+  .about-badge{
   .about-title,
   .about-subtitle {
     position: relative;
@@ -1883,8 +1885,10 @@ img {
   }
 
   .about-badge {
-    margin: 0 auto 16px;
-    display: inline-block;
+    display: flex;               /* enable flexbox */
+  align-items: center;         /* vertical center */
+  justify-content: center;     /* horizontal center */
+  margin: 0 auto 16px;  
   }
 
   .about-title {
@@ -3576,8 +3580,10 @@ button:focus-visible {
   }
 
   .contact-badge {
-    margin: 0 auto 16px;
-    display: inline-block;
+    display: flex;               /* enable flexbox */
+  align-items: center;         /* vertical center */
+  justify-content: center;     /* horizontal center */
+  margin: 0 auto 16px;  
   }
 
   .contact-title {
@@ -4547,6 +4553,7 @@ html, body {
     border-radius: 14px;
   }
 }
+
 
 
 
